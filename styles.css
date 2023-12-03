@@ -83,3 +83,26 @@ footer {
     text-align: center;
     padding: 10px;
 }
+#request {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#request p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#request p:last-child {
+    margin-bottom: 0;
+}
+
+body.request-mark {
+    background-color: #f4f4f4;
+}
