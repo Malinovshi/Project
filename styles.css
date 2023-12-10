@@ -1,20 +1,12 @@
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-}
-
 nav {
     background-color: #333;
     padding: 10px;
+    text-align: center; /* Center the navigation links */
 }
 
 ul {
     list-style-type: none;
+    display: inline-block; /* Align the list items horizontally */
 }
 
 li {
@@ -26,55 +18,40 @@ a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 5px 10px; /* Add padding to the navigation links */
+    border-radius: 5px; /* Add rounded corners to the links */
 }
 
-#about {
-    background-color: #f4f4f4;
-    padding: 50px;
-    text-align: center;
-}
-
-#skills {
-    padding: 50px;
-}
-
-#skills h2 {
-    color: #333;
-}
-
-#skills ul {
-    list-style-type: none;
-}
-
-#skills li {
-    margin-bottom: 10px;
-}
-
-#projects {
-    background-color: #f4f4f4;
-    padding: 50px;
+a:hover {
+    background-color: #555; /* Change background color on hover */
 }
 
 .project {
     margin-bottom: 20px;
+    padding: 20px; /* Add padding to each project */
+    border: 1px solid #ddd; /* Add a border to each project */
+    border-radius: 5px; /* Add rounded corners to each project */
 }
 
-.project h3 {
-    color: #333;
-}
-
-#education {
-    padding: 50px;
-}
-
-#contact {
-    background-color: #333;
-    color: white;
-    padding: 50px;
-}
-
-#contact p {
+#contact form input,
+#contact form textarea {
+    width: 100%; /* Make input fields and textarea full width */
+    padding: 10px;
     margin-bottom: 15px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#contact form button {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contact form button:hover {
+    background-color: #777;
 }
 
 footer {
@@ -82,39 +59,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
-#request {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#request p {
-    margin-bottom: 15px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-#request p:last-child {
-    margin-bottom: 0;
-}
-
-body.request-mark {
-    background-color: #f4f4f4;
-}
-
-button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
+    position: fixed; /* Stick the footer to the bottom */
+    width: 100%;
+    bottom: 0;
 }
